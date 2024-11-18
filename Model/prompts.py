@@ -79,3 +79,98 @@ FINAL_PROMPT = """
     {{ Insert your answer }}
 
 """
+
+
+Tweet_QnA_Prompts = """ 
+You are an AI assistant specializing in financial analysis. Given the following tweets about {company_name} collected on {date} and the 
+data with which you are going to work with {data}, perform the following tasks:
+
+1. **Relevance Filtering:** Identify and extract tweets that contain information likely to impact {company_name}'s stock price. Focus on tweets mentioning:
+   - Company earnings or financial reports
+   - Product launches or updates
+   - Legal issues or lawsuits
+   - Management or leadership changes
+   - Significant market trends or events affecting the industry
+   - Regulatory changes or government actions
+   - Government Policies affecting the company
+
+2. **Summarization:** Summarize the key points from the relevant tweets in a concise manner. Ensure that each summary point does not overlap or talk about the same subject.
+    
+3. **Question Generation:** Create insightful question-answer pairs based on the summarized information. Ensure that:
+   - Each question targets a specific piece of important information.
+   - Each answer is accurate and derived from the tweets.
+   - Irrelevant or speculative content is excluded.
+
+Please present the output in the following format:
+"
+    Summary points: 
+    - {{summary point 1}}
+    - {{summary point 2}}
+    - {{summary point 3}}
+    ...
+
+  
+    QnA Pairs: [
+        {{
+            "question": "A question you have created that is relevant to stock market prediction which is answered by your summary point 1",
+            "answer": "Your Summary point 1"
+        }},
+        {{
+            "question": "A question you have created that is relevant to stock market prediction which is answered by your summary point 2",
+            "answer": "Your Summary point 2"
+        }},
+        {{
+            "question": "A question you have created that is relevant to stock market prediction which is answered by your summary point 3",
+            "answer": "Your Summary point 3"
+        }}
+    ]
+
+"  
+"""
+
+New_QnA_prompt = """ 
+You are an AI assistant specializing in financial analysis. Given the following news headlines and snippets about {company_name} collected on {date} and 
+the data with which you are going to work with {data}, perform the following tasks:
+
+1. **Relevance Filtering:** Identify and extract news items that contain information likely to impact {company_name}'s stock price. Focus on news mentioning:
+   - Quarterly or annual earnings reports
+   - Major product launches or failures
+   - Mergers, acquisitions, or partnerships
+   - Legal actions involving the company
+   - Executive leadership changes
+   - Industry-wide events affecting the company
+   - Regulatory decisions or policy changes
+
+2. **Summarization:** Summarize the key points from the relevant news items in a concise manner. Ensure that each summary point does not overlap or talk about the same subject.
+
+3. **Question Generation:** Create insightful question-answer pairs based on the summarized information. Ensure that:
+   - Each question targets a specific piece of important information.
+   - Each answer is accurate and derived from the news content.
+   - Irrelevant or speculative content is excluded.
+
+Please present the output in the following format:
+"
+    Summary points: 
+    - {{summary point 1}}
+    - {{summary point 2}}
+    - {{summary point 3}}
+    ...
+
+  
+    QnA Pairs: [
+        {{
+            "question": "A question you have created that is relevant to stock market prediction which is answered by your summary point 1",
+            "answer": "Your Summary point 1"
+        }},
+        {{
+            "question": "A question you have created that is relevant to stock market prediction which is answered by your summary point 2",
+            "answer": "Your Summary point 2"
+        }},
+        {{
+            "question": "A question you have created that is relevant to stock market prediction which is answered by your summary point 3",
+            "answer": "Your Summary point 3"
+        }}
+    ]
+
+"  
+"""
