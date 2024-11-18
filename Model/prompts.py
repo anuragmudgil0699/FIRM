@@ -74,7 +74,7 @@ FINAL_PROMPT = """
     consider anything else that might affect the forecast that you did not before consider (e.g. base rate of
     the event).
     {{ Insert your thoughts }}
-    7. Output your final prediction (a number between 0 and 1) with an asterisk at the beginning and end
+    7. Output your final prediction (a number between 0 and 1) with a hash '#' at the beginning and end
     of the decimal.
     {{ Insert your answer }}
 

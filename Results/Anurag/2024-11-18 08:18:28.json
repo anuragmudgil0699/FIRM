@@ -1,0 +1,44 @@
+[
+    {
+        "Accuracy": 0.2,
+        "True Positive": 1,
+        "True Negative": 0,
+        "False Positive": 2,
+        "False Negative": 2
+    },
+    {
+        "ticker": "AAPL",
+        "date": "2024-08-15",
+        "prediction": 0,
+        "probability": 0.35,
+        "ground_truth_prediction": 1
+    },
+    {
+        "ticker": "AAPL",
+        "date": "2024-08-16",
+        "prediction": 1,
+        "probability": 0.58,
+        "ground_truth_prediction": 1
+    },
+    {
+        "ticker": "AAPL",
+        "date": "2024-08-19",
+        "prediction": 1,
+        "probability": 0.7,
+        "ground_truth_prediction": 0
+    },
+    {
+        "ticker": "AAPL",
+        "date": "2024-08-20",
+        "prediction": 0,
+        "probability": 0.35,
+        "ground_truth_prediction": 1
+    },
+    {
+        "ticker": "AAPL",
+        "date": "2024-08-21",
+        "prediction": 1,
+        "probability": 0.6,
+        "ground_truth_prediction": 0
+    }
+]

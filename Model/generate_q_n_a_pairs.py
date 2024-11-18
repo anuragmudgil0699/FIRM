@@ -1,24 +1,13 @@
 import re
-from constants import GEMINI_API_KEY, GPT_API_KEY, MODEL
-import google.generativeai as genai
-from openai import OpenAI
 from prompts import Tweet_QnA_Prompts, New_QnA_prompt
-from predictions import call_llm
+from llm import call_llm
 from generate_news import get_news
 import json
 from utils import clean_tweets
-from datetime import datetime, timedelta
-from generate_twitter_data import get_tweets, ticker_to_company_name
-
-
-
-genai.configure(api_key=GEMINI_API_KEY)
-model = genai.GenerativeModel("gemini-1.5-flash")
-
-client = OpenAI(api_key=GPT_API_KEY)
+from generate_twitter_data import get_tweets
 
 def extract_qna_pairs(text):
-    qna_start = text.find("QnA Pairs:")
+    qna_start = text.find("QnA Pairs")
     if qna_start == -1:
         raise ValueError("QnA Pairs section not found in the input string.")
 
@@ -95,17 +84,4 @@ def generate_QnA_pairs(company_name, ticker, date): #I am under the impression t
     news_paragraph = news_concatenate(news_articles)
     news_qna = News_QnA(company_name, date_str, news_paragraph)
 
-    # This is Sec call
-
-    # This is tech call
-
-# date_obj = datetime.strptime("2024-08-15", "%Y-%m-%d")
-# news_articles = get_news(ticker="AAPL", date=date_obj, source="both")
-# news_paragraph = news_concatenate(news_articles)
-# news_qna = News_QnA("APPLE", "2024-08-15", news_paragraph)
-
-
-# tweet_scrap = get_tweets(ticker="AAPL", date=date_obj) 
-# cleaned_tweets = clean_tweets(tweet_scrap)
-# tweet_para = tweet_concatenate(cleaned_tweets)
-# tweet_qna = Tweet_QnA("APPLE", "2024-08-15", tweet_para)
+    return tweet_qna + news_qna
