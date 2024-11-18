@@ -174,3 +174,18 @@ Please present the output in the following format:
 
 "  
 """
+
+SUMMARIZE_FINANCIAL_DATA_PROMPT = ''' 
+
+You are a financial expert. Analyze the given 10 days of stock market historical data along with the extracted features to prepare a concise report in 5-8 lines. 
+The report should highlight key patterns, trends, and insights from the data, focusing on factors that could influence future stock price predictions.
+
+Historical Data:
+{historical_data}
+
+Extracted Features:
+{stock_market_features}
+
+Ensure the summary captures important indicators such as price movements, volatility, volume trends, and any other critical observations that may aid in forecasting stock market behavior. 
+'''
+

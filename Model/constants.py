@@ -1,4 +1,3 @@
-
 MODEL = "GEMINI"
 START_DATE = "2024-08-15"
 PREDICTION_RANGE = 7  # No of days you want to predict for

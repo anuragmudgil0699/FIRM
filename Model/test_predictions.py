@@ -68,7 +68,7 @@ def test():
     return results
 
 results = test()
-current_time_str = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+current_time_str = datetime.now().strftime("%Y-%m-%d %H-%M-%S")
 path = f'Results/{USER}/{current_time_str}.json'
 os.makedirs(os.path.dirname(path), exist_ok=True)
 with open(path, 'w') as json_file:

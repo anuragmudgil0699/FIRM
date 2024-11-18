@@ -5,6 +5,7 @@ from generate_news import get_news
 import json
 from utils import clean_tweets
 from generate_twitter_data import get_tweets
+from get_technical_qa import get_question_answer_pairs
 
 def extract_qna_pairs(text):
     qna_start = text.find("QnA Pairs")
@@ -83,5 +84,7 @@ def generate_QnA_pairs(company_name, ticker, date): #I am under the impression t
     news_articles = get_news(ticker=ticker, date=date, source="both")
     news_paragraph = news_concatenate(news_articles)
     news_qna = News_QnA(company_name, date_str, news_paragraph)
+    # technical qna
+    technical_qna = get_question_answer_pairs(ticker, company_name, date)
 
-    return tweet_qna + news_qna
+    return tweet_qna + news_qna + technical_qna
