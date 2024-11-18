@@ -43,8 +43,8 @@ tickers_df = pd.read_csv(tickers_file_path)
 print(tickers_df.head())
 tickers = tickers_df['Company Ticker'].str.strip().tolist()
 
-start_date = "2024-08-15"
-end_date = "2024-08-19"
+start_date = "2024-08-06"
+end_date = "2024-08-14"
 all_tickers_data = pd.DataFrame()
 
 for ticker in tickers:
