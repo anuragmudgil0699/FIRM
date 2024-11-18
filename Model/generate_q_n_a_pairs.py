@@ -31,6 +31,7 @@ def extract_qna_pairs(text):
     return qna_pairs
 
 
+
 def news_concatenate(news):
     concatenated_paragraph = []
 

@@ -21,7 +21,8 @@ def predict_stock_price_movement(ticker, date):
     qa_pair = generate_QnA_pairs(company_name, ticker, date)
     prompt = FINAL_PROMPT.format(company_name=company_name, date=date, retrieved_info=qa_pair)
     response = call_llm(prompt=prompt)
-    prediction = extract_prediction(response.text)
+    print(f"RESPONSE!!!!!!!!!!!!! :\n {response}")
+    prediction = extract_prediction(response)
     if prediction < 0.5:
         return 0, prediction
     return 1, prediction
