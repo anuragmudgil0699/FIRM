@@ -66,7 +66,7 @@ FINAL_PROMPT = """
     3. Using your knowledge of the world and topic, as well as the information provided, provide a few
     reasons why the answer might be yes. Rate the strength of each reason.
     {{ Insert your thoughts }}
-    4. Aggregate your considerations. Think like a superforecaster (e.g. Nate Silver).
+    4. Aggregate your considerations. Think like a financial analyst (e.g. Cathie Wood).
     {{ Insert your aggregated considerations }}
     5. Output an initial probability (prediction) given steps 1-4.
     {{ Insert initial probability }}
@@ -101,7 +101,12 @@ data with which you are going to work with {data}, perform the following tasks:
    - Each answer is accurate and derived from the tweets.
    - Irrelevant or speculative content is excluded.
 
-Please present the output in the following format:
+Ensure that:
+- The output is **only** the JSON object.
+- The JSON is **valid and properly formatted**.
+- There is **no additional text or explanations** outside the JSON.
+- There are ** no trailing comma's after the last property** .
+Please present the output in the following format. :
 "
     Summary points: 
     - {{summary point 1}}
@@ -148,7 +153,12 @@ the data with which you are going to work with {data}, perform the following tas
    - Each answer is accurate and derived from the news content.
    - Irrelevant or speculative content is excluded.
 
-Please present the output in the following format:
+Ensure that:
+- The output is **only** the JSON object.
+- The JSON is **valid and properly formatted**.
+- There is **no additional text or explanations** outside the JSON.
+- There are ** no trailing comma's after the last property** .
+Please present the output in the following format. :
 "
     Summary points: 
     - {{summary point 1}}
@@ -174,3 +184,18 @@ Please present the output in the following format:
 
 "  
 """
+
+SUMMARIZE_FINANCIAL_DATA_PROMPT = ''' 
+
+You are a financial expert. Analyze the given 10 days of stock market historical data along with the extracted features to prepare a concise report in 5-8 lines. 
+The report should highlight key patterns, trends, and insights from the data, focusing on factors that could influence future stock price predictions.
+
+Historical Data:
+{historical_data}
+
+Extracted Features:
+{stock_market_features}
+
+Ensure the summary captures important indicators such as price movements, volatility, volume trends, and any other critical observations that may aid in forecasting stock market behavior. 
+'''
+

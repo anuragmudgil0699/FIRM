@@ -1,0 +1,254 @@
+[
+    {
+        "Accuracy": 0.6285714285714286,
+        "True Positive": 13,
+        "True Negative": 9,
+        "False Positive": 13,
+        "False Negative": 0
+    },
+    {
+        "ticker": "AAPL",
+        "date": "2024-08-15",
+        "prediction": 0,
+        "probability": 0.4,
+        "ground_truth_prediction": 1
+    },
+    {
+        "ticker": "MSFT",
+        "date": "2024-08-15",
+        "prediction": 1,
+        "probability": 0.55,
+        "ground_truth_prediction": 1
+    },
+    {
+        "ticker": "GOOGL",
+        "date": "2024-08-15",
+        "prediction": 0,
+        "probability": 0.25,
+        "ground_truth_prediction": 1
+    },
+    {
+        "ticker": "AMZN",
+        "date": "2024-08-15",
+        "prediction": 1,
+        "probability": 0.55,
+        "ground_truth_prediction": 1
+    },
+    {
+        "ticker": "META",
+        "date": "2024-08-15",
+        "prediction": 0,
+        "probability": 0.35,
+        "ground_truth_prediction": 1
+    },
+    {
+        "ticker": "TSLA",
+        "date": "2024-08-15",
+        "prediction": 0,
+        "probability": 0.35,
+        "ground_truth_prediction": 1
+    },
+    {
+        "ticker": "JNJ",
+        "date": "2024-08-15",
+        "prediction": 0,
+        "probability": 0.4,
+        "ground_truth_prediction": 1
+    },
+    {
+        "ticker": "AAPL",
+        "date": "2024-08-16",
+        "prediction": 1,
+        "probability": 0.6,
+        "ground_truth_prediction": 1
+    },
+    {
+        "ticker": "MSFT",
+        "date": "2024-08-16",
+        "prediction": 0,
+        "probability": 0.35,
+        "ground_truth_prediction": 0
+    },
+    {
+        "ticker": "GOOGL",
+        "date": "2024-08-16",
+        "prediction": 0,
+        "probability": 0.25,
+        "ground_truth_prediction": 1
+    },
+    {
+        "ticker": "AMZN",
+        "date": "2024-08-16",
+        "prediction": 0,
+        "probability": 0.4,
+        "ground_truth_prediction": 0
+    },
+    {
+        "ticker": "META",
+        "date": "2024-08-16",
+        "prediction": 0,
+        "probability": 0.35,
+        "ground_truth_prediction": 0
+    },
+    {
+        "ticker": "TSLA",
+        "date": "2024-08-16",
+        "prediction": 1,
+        "probability": 0.65,
+        "ground_truth_prediction": 1
+    },
+    {
+        "ticker": "JNJ",
+        "date": "2024-08-16",
+        "prediction": 0,
+        "probability": 0.4,
+        "ground_truth_prediction": 1
+    },
+    {
+        "ticker": "AAPL",
+        "date": "2024-08-19",
+        "prediction": 0,
+        "probability": 0.35,
+        "ground_truth_prediction": 0
+    },
+    {
+        "ticker": "MSFT",
+        "date": "2024-08-19",
+        "prediction": 1,
+        "probability": 0.7,
+        "ground_truth_prediction": 1
+    },
+    {
+        "ticker": "GOOGL",
+        "date": "2024-08-19",
+        "prediction": 0,
+        "probability": 0.15,
+        "ground_truth_prediction": 1
+    },
+    {
+        "ticker": "AMZN",
+        "date": "2024-08-19",
+        "prediction": 1,
+        "probability": 0.6,
+        "ground_truth_prediction": 1
+    },
+    {
+        "ticker": "META",
+        "date": "2024-08-19",
+        "prediction": 0,
+        "probability": 0.4,
+        "ground_truth_prediction": 1
+    },
+    {
+        "ticker": "TSLA",
+        "date": "2024-08-19",
+        "prediction": 1,
+        "probability": 0.55,
+        "ground_truth_prediction": 1
+    },
+    {
+        "ticker": "JNJ",
+        "date": "2024-08-19",
+        "prediction": 1,
+        "probability": 0.55,
+        "ground_truth_prediction": 1
+    },
+    {
+        "ticker": "AAPL",
+        "date": "2024-08-20",
+        "prediction": 1,
+        "probability": 0.52,
+        "ground_truth_prediction": 1
+    },
+    {
+        "ticker": "MSFT",
+        "date": "2024-08-20",
+        "prediction": 1,
+        "probability": 0.75,
+        "ground_truth_prediction": 1
+    },
+    {
+        "ticker": "GOOGL",
+        "date": "2024-08-20",
+        "prediction": 0,
+        "probability": 0.3,
+        "ground_truth_prediction": 1
+    },
+    {
+        "ticker": "AMZN",
+        "date": "2024-08-20",
+        "prediction": 0,
+        "probability": 0.35,
+        "ground_truth_prediction": 1
+    },
+    {
+        "ticker": "META",
+        "date": "2024-08-20",
+        "prediction": 0,
+        "probability": 0.35,
+        "ground_truth_prediction": 0
+    },
+    {
+        "ticker": "TSLA",
+        "date": "2024-08-20",
+        "prediction": 0,
+        "probability": 0.35,
+        "ground_truth_prediction": 0
+    },
+    {
+        "ticker": "JNJ",
+        "date": "2024-08-20",
+        "prediction": 1,
+        "probability": 0.6,
+        "ground_truth_prediction": 1
+    },
+    {
+        "ticker": "AAPL",
+        "date": "2024-08-21",
+        "prediction": 0,
+        "probability": 0.4,
+        "ground_truth_prediction": 0
+    },
+    {
+        "ticker": "MSFT",
+        "date": "2024-08-21",
+        "prediction": 0,
+        "probability": 0.45,
+        "ground_truth_prediction": 0
+    },
+    {
+        "ticker": "GOOGL",
+        "date": "2024-08-21",
+        "prediction": 0,
+        "probability": 0.25,
+        "ground_truth_prediction": 0
+    },
+    {
+        "ticker": "AMZN",
+        "date": "2024-08-21",
+        "prediction": 0,
+        "probability": 0.25,
+        "ground_truth_prediction": 1
+    },
+    {
+        "ticker": "META",
+        "date": "2024-08-21",
+        "prediction": 1,
+        "probability": 0.75,
+        "ground_truth_prediction": 1
+    },
+    {
+        "ticker": "TSLA",
+        "date": "2024-08-21",
+        "prediction": 0,
+        "probability": 0.35,
+        "ground_truth_prediction": 1
+    },
+    {
+        "ticker": "JNJ",
+        "date": "2024-08-21",
+        "prediction": 1,
+        "probability": 0.55,
+        "ground_truth_prediction": 1
+    }
+]

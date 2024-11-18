@@ -27,8 +27,11 @@ def ChatGPTCall(prompt):
     ]
 )
     print(completion.choices[0].message.content)
+    return completion.choices[0].message.content
 
 def call_llm(prompt):
     if MODEL == 'GEMINI':
-        return GeminiCall(prompt)
-    return ChatGPTCall(prompt)
+        result_gemini_text = GeminiCall(prompt).text
+        return result_gemini_text
+    result_chatgpt_text = ChatGPTCall(prompt)
+    return result_chatgpt_text
