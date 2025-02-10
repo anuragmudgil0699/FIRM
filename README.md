@@ -1,4 +1,4 @@
-# FIRM
+# Stock Watch
 NLP Project 2024
 
 
